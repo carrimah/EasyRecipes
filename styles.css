@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap');
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+:root{
+    --main-bg-color: #c4b4a2;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+/*HEADER*/
+header{
+    max-height: 100px;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px;
+}
+#brand{
+    text-transform: uppercase;
+    color: #fffbf0;
+}
+#brand > h2:nth-of-type(2){
+    margin-top: -15px;
+}
+#right-header{
+    display: flex; gap: 20px;
+}
+#search{
+    height: 32px; width: 240px;
+    background-color: #a89a8a;
+    border-radius: 20px;
+}
+#menu{
+    height: 32px; width: 32px;
+    background-color: #a89a8a;
+    border-radius: 20px;
+}
