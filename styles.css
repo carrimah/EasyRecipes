@@ -8,6 +8,11 @@
 }
 body{
     background-color: var(--main-bg-color);
+    min-height: 100vh; width: 100vw;
+    display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+}
+body > *{
+    width: 100%;
 }
 /*HEADER*/
 header{
@@ -34,4 +39,15 @@ header{
     height: 32px; width: 32px;
     background-color: #a89a8a;
     border-radius: 20px;
+}
+
+/*MAIN*/
+main{
+    flex: 2;
+    display: flex; justify-content: center; align-items: center;
+}
+#bg-oval{
+    height: 300px; width: 300px;
+    background-color: #a89a8a;
+    border-radius: 50%;
 }
