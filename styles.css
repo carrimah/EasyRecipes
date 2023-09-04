@@ -44,7 +44,7 @@ header{
     margin-left: 4px;
 }
 input::placeholder{
-    color: #d2cec3;
+    color: #d6d2c7;
 }
 #menu{
     height: 32px; width: 32px;
@@ -86,12 +86,18 @@ footer{
     border: none;
     border-radius: 20px;
     display: flex; justify-content: center; align-items: center;
+    position: relative;
+    z-index: 2;
 }
 .nav-btn > img{
     height: 18px
 }
 #back-btn{
     padding-left: 6px;
+}
+.nav-btn:hover{
+    cursor: pointer;
+    background-color: #766a5e;
 }
 #recipe-num{
     display: flex; justify-content: center; align-items: center;
@@ -120,17 +126,23 @@ footer{
     font-weight: lighter;
     font-size: 12px;
 }
+
 /*RECIPE SLIDE*/
 #recipe-slide{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 0;
+    display: flex; align-items: center;
+    transition: all 2s ease-in;
+    min-width: 100vw;
+}
+.slide{
+    width: 100%;
+    display: flex; justify-content: center; align-items: center;
 }
 #recipe-img{
     width: 400px;
 }
-#recipe-slide > h1{
+#recipe-slide h1{
     color: #fffbf0;
     font-size: 60px;
 }

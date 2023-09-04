@@ -25,9 +25,16 @@
     <main>
         <div id="bg-oval"></div>
         <div id="recipe-slide">
-            <h1 id="recipe-title-left">Chai</h1>
-            <img id="recipe-img" src="./images/chai.png" alt="Photo of cup of chai">
-            <h1 id="recipe-title-right">Latte</h1>
+            <div class="slide">
+                <h1 id="recipe-title-left">Chai</h1>
+                <img id="recipe-img" src="./images/chai.png" alt="Photo of cup of chai">
+                <h1 id="recipe-title-right">Latte</h1>
+            </div>
+            <div class="slide">
+                <h1 id="recipe-title-left">Chai</h1>
+                <img id="recipe-img" src="./images/chai.png" alt="Photo of cup of chai">
+                <h1 id="recipe-title-right">Latte</h1>
+            </div>
         </div>
     </main>
     <footer>
@@ -37,7 +44,7 @@
                     <img id="back-btn" src="./images/nav_back.svg" alt="Back Navigation Button">
                 </div>
                 <div class="nav-btn">
-                    <img src="./images/nav_forward.svg" alt="Forward Navigation Button">
+                    <img id="fwd-btn" src="./images/nav_forward.svg" alt="Forward Navigation Button">
                 </div>
             </div>
             <div id="recipe-num">
@@ -48,9 +55,10 @@
         <div id="right-footer">
             <div id="recipe-credit">
                 <p>Recipe by</p>
-                <h4 id="credit">Credit</h4>
+                <h4 id="credit" data-recipe="1">Credit</h4>
             </div>
         </div>
     </footer>
+    <script defer src="./script.js"></script>
 </body>
 </html>
