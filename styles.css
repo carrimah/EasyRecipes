@@ -38,13 +38,22 @@ header{
     display: flex; align-items: center;
     padding: 0 10px;
 }
-path{
-    fill: #fffbf0;
+#search > input{
+    background: transparent;
+    border: none;
+    margin-left: 4px;
+}
+input::placeholder{
+    color: #d2cec3;
 }
 #menu{
     height: 32px; width: 32px;
     background-color: #a89a8a;
     border-radius: 20px;
+    display: flex; justify-content: center; align-items: center;
+}
+#menu-icon{
+    opacity: 0.7;
 }
 
 /*MAIN*/
@@ -76,6 +85,13 @@ footer{
     background-color: #a89a8a;
     border: none;
     border-radius: 20px;
+    display: flex; justify-content: center; align-items: center;
+}
+.nav-btn > img{
+    height: 18px
+}
+#back-btn{
+    padding-left: 6px;
 }
 #recipe-num{
     display: flex; justify-content: center; align-items: center;
