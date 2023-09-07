@@ -56,18 +56,6 @@ input::placeholder{
     opacity: 0.7;
 }
 
-/*MAIN*/
-main{
-    flex: 2;
-    display: flex; justify-content: center; align-items: center;
-    position: relative;
-}
-#bg-oval{
-    height: 300px; width: 300px;
-    background-color: #a89a8a;
-    border-radius: 50%;
-}
-
 /*FOOTER*/
 footer{
     display: flex; justify-content: space-between; align-items: center;
@@ -126,32 +114,43 @@ footer{
     font-weight: lighter;
     font-size: 12px;
 }
-
-/*RECIPE SLIDE*/
-#recipe-slide{
-    position: absolute;
-    z-index: 0;
-    display: flex; align-items: center;
-    transition: all 2s ease-in;
+/*MAIN*/
+main{
+    flex: 2;
+    display: flex; justify-content: center; align-items: center;
+    overflow: hidden;
     min-width: 100vw;
 }
+#bg-oval{
+    height: 25vw; width: 25vw;
+    background-color: #a89a8a;
+    border-radius: 50%;
+}
+
+#slides{
+    position: absolute;
+    left: 0;
+    width: 300vw;
+    display: flex;
+    transition: all 1.5s;
+}
 .slide{
-    width: 100%;
+    width: 100vw;
     display: flex; justify-content: center; align-items: center;
 }
-#recipe-img{
-    width: 400px;
-}
-#recipe-slide h1{
+.slide h1{
     color: #fffbf0;
     font-size: 60px;
+    width: 25vw;
 }
-#recipe-title-left{
-    width: 200px;
-    margin-right: -70px;
+#slide-img{
+    width: 30vw;
+}
+#slide-title-left{
     text-align: right;
+    margin-right: -4vw;
 }
-#recipe-title-right{
-    width: 200px;
-    margin-left: -70px;
+#slide-title-right{
+    text-align: left;
+    margin-left: -4vw;
 }
