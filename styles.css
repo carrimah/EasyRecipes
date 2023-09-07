@@ -20,6 +20,7 @@ header{
     max-height: 100px;
     display: flex; justify-content: space-between; align-items: center;
     padding: 20px;
+    position: relative; z-index: 3;
 }
 #brand{
     text-transform: uppercase;
@@ -46,6 +47,11 @@ header{
 input::placeholder{
     color: #d6d2c7;
 }
+input:focus{
+    border: none;
+    outline: none;
+    color: wheat;
+}
 #menu{
     height: 32px; width: 32px;
     background-color: #a89a8a;
@@ -55,7 +61,10 @@ input::placeholder{
 #menu-icon{
     opacity: 0.7;
 }
-
+#menu:hover, #search:hover{
+    cursor: pointer;
+    background-color: #766a5e;
+}
 /*FOOTER*/
 footer{
     display: flex; justify-content: space-between; align-items: center;
@@ -120,6 +129,7 @@ main{
     display: flex; justify-content: center; align-items: center;
     overflow: hidden;
     min-width: 100vw;
+    position: relative; z-index: 1;
 }
 #bg-oval{
     height: 25vw; width: 25vw;
