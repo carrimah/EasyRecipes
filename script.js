@@ -2,12 +2,25 @@ let credit = document.querySelector("#credit");
 let slides = document.querySelector("#slides");
 let forwardBtn = document.querySelector("#fwd-btn");
 let backBtn = document.querySelector("#back-btn");
+let currNum = document.querySelector("#curr-num");
 let currSlide = 1;
 
-function setCredit(recipe){
-    if(recipe == 1){
+function setCredit(){
+    credit.setAttribute("data-recipe", currSlide);
+    if(currSlide == 1){
         credit.innerHTML="Tazo Tea"
     }
+    else if(currSlide == 2){
+        credit.innerHTML="Carrima"
+    }
+    else if(currSlide == 3){
+        credit.innerHTML="Carrima"
+    }
+}
+
+function setNum(){
+    let test = currSlide.toString().padStart(2, '0');
+    currNum.innerHTML = test;
 }
 
 function getCurr(){
@@ -19,19 +32,23 @@ function setCurr(){
     old.classList.remove("slide-curr");
     let curr = document.querySelector("[data-slide=" + "\"" + currSlide + "\"]");
     curr.classList.add("slide-curr");
+    setCredit();
+    setNum();
 }
 
 function setSlide(dir){
     currSlide = getCurr();
-    if(dir == 1 && currSlide < 4){
-        console.log("BEEEEPs")
+    if(dir == 1 && currSlide < 3){
         slides.style.marginLeft =  (-100 * (currSlide)) + "vw";
         currSlide += 1; setCurr();
     }
     else if(dir == 0 && currSlide != 1){
         if(currSlide == 2){
             slides.style.marginLeft = "0vw";
-        }else{slides.style.marginLeft = (-25 * (currSlide)) + "vw";}
+        }else{
+            console.log(currSlide)
+            slides.style.marginLeft = (-100 * (currSlide-2)) + "vw";
+        }
         currSlide -= 1; setCurr();
     }
 }
@@ -39,5 +56,5 @@ function setSlide(dir){
 forwardBtn.addEventListener("click", ()=>{setSlide(1);});
 backBtn.addEventListener("click", ()=>{setSlide(0);})
 
-setCredit(credit.getAttribute("data-recipe"));
+setCredit();
 
