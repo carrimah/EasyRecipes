@@ -15,19 +15,73 @@ body{
 body > *{
     width: 100%;
 }
+
+/*DRAWER*/
+#drawer{
+    position: absolute; z-index: 5;
+    height: calc(100vh - 80px); width: 300px;
+    top: 70px; right: 14px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    background-color: #766a5e; color: #fffbf0;
+    border-radius: 20px;
+    display: none;
+}
+#drawer p{
+    text-align: center;
+    padding-bottom: 12px;
+}
+#drawer hr{
+    border: none;
+    border-bottom: 1px solid #c4b4a2;
+}
+#drawer a{
+    text-decoration: none;
+    color: #fffbf0;
+    font-size: 18px;
+}
+#drawer .brand, #drawer a{
+    margin-left: 24px;
+}
+#drawer p:hover{
+    cursor: default;
+}
+#drawer a:hover{
+    text-shadow: 1px 1px 2px rgb(255, 115, 0);
+}
+#drawer-top{
+    display: flex; flex-direction: column;
+    padding: 12px 0;
+    gap: 12px;
+}
+#drawer .brand, #d-about{
+    height: 72px;
+    display: flex; flex-direction: column; justify-content: center;
+}
+#d-about{
+    height: 48px;
+}
+
 /*HEADER*/
 header{
-    max-height: 100px;
+    height: 100px;
     display: flex; justify-content: space-between; align-items: center;
     padding: 20px;
     position: relative; z-index: 3;
 }
-#brand{
+.brand{
     text-transform: uppercase;
     color: #fffbf0;
 }
-#brand > h2:nth-of-type(2){
+.brand > h2:nth-of-type(2){
     margin-top: -15px;
+}
+.brand:hover{
+    cursor: pointer;
+    color: #766a5e;
+}
+#drawer .brand:hover{
+    color: #fffbf0;
+    text-shadow: 1px 1px 2px rgb(255, 115, 0);
 }
 #right-header{
     display: flex; gap: 20px;
@@ -65,6 +119,7 @@ input:focus{
     cursor: pointer;
     background-color: #766a5e;
 }
+
 /*FOOTER*/
 footer{
     display: flex; justify-content: space-between; align-items: center;
@@ -123,6 +178,15 @@ footer{
     font-weight: lighter;
     font-size: 12px;
 }
+#recipe-credit:hover{
+    background-color: #766a5e;
+    cursor: default;
+}
+#recipe-credit > *:hover, #recipe-credit > *{
+    cursor: default;
+}
+
+
 /*MAIN*/
 main{
     flex: 2;
