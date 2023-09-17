@@ -155,6 +155,7 @@ main{
 }
 #slide-img{
     width: 30vw;
+    align-self: flex-end;
 }
 #slide-title-left{
     text-align: right;
