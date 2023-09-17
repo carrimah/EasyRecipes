@@ -6,6 +6,7 @@
     <title>Lazy Recipes</title>
 </head>
 <link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./index.css">
 <body>
     <section id="drawer">
         <div>
@@ -35,7 +36,7 @@
         <div id="right-header">
             <div id="search">
                 <img id="search-icon" src="./images/search.svg" alt="Search Icon" height="24">
-                <input type="text" placeholder="Find a recipe">
+                <input type="text" placeholder="Find a recipe" id="search-input" name="search-input">
             </div>
             <div id="menu">
                 <img src="./images/menu.svg" alt="Menu Icon" id="menu-icon" height="20">
@@ -45,17 +46,17 @@
     <main>
         <div id="bg-oval"></div>
         <div id="slides">
-            <div class="slide slide-curr" data-slide="1">
+            <div class="slide slide-curr" data-slide="1" data-recipe="chai.html">
                 <h1 id="slide-title-left">Chai</h1>
                 <img id="slide-img" src="./images/chai.png" alt="Photo of cup of chai">
                 <h1 id="slide-title-right">Latte</h1>
             </div>
-            <div class="slide" data-slide="2">
+            <div class="slide" data-slide="2" data-recipe="ramen.html">
                 <h1 id="slide-title-left">Ramen</h1>
                 <img id="slide-img" src="./images/ramen.png" alt="Photo of cup of chai">
                 <h1 id="slide-title-right">Noodles</h1>
             </div>
-            <div class="slide slide-big-left" data-slide="3">
+            <div class="slide slide-big-left" data-slide="3" data-recipe="alfredo.html">
                 <h1 id="slide-title-left">Fettuccine</h1>
                 <img id="slide-img" src="./images/alfredo.png" alt="Photo of cup of chai">
                 <h1 id="slide-title-right">Alfredo</h1>
@@ -85,5 +86,6 @@
         </div>
     </footer>
     <script defer src="./script.js"></script>
+    <script defer src="./index.js"></script>
 </body>
 </html>
