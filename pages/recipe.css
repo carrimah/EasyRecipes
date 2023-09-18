@@ -33,7 +33,7 @@ main{
     position: relative;
     z-index: 2;
     font-family: 'Sacramento', cursive;
-    font-size: 60px;
+    font-size: 5vw;
     font-weight: 300;
 }
 #title-big{
@@ -41,9 +41,9 @@ main{
     color: black;
     z-index: 1;
     text-transform: uppercase;
-    letter-spacing: 40px;
-    font-size: 80px;
-    margin-top: -65px;
+    letter-spacing: 3vw;
+    font-size: 6.4vw;
+    margin-top: -5.4vw;
 }
 .expand-recipe{
     display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -65,16 +65,53 @@ main{
 }
 
 .recipe-intro{
-    width: 800px;
+    width: 70vw;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 2vw;
+    text-shadow: 1px 1px 2px #695a4c;
 }
 
 .recipe-box{
-    width: 800px;
-    padding: 20px;
+    width: 70vw;
+    padding: 2vw;
     display: flex; justify-content: space-between;
 }
 ol, ul{
     margin-left: 15px;
+}
+
+.recipe-box h2{
+    color: #766a5e;
+}
+
+/*MOBILE- LAST (Sorry)*/
+@media only screen and (max-width: 600px) {
+    #title-cursive{
+        font-size: 15vw;
+    }
+    #title-big{
+        letter-spacing: 3vw;
+        font-size: 16vw;
+        margin-top: -16vw;
+    }
+    .recipe-img{
+        width: 50vw;
+        height: 50vw;
+        margin-top: -10vh;
+    }
+    .recipe-box{
+        flex-direction: column;
+        width: 80vw;
+    }
+    .recipe-box h2{
+        text-align: center;
+        margin-top: 4vw;
+    }
+    .recipe-intro{
+        width: 80vw;
+        font-size: 14px;
+    }
+    .expand-recipe{
+        display: none;
+    }
 }
