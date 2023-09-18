@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
+body{
+    min-height: 99vh; width: 100vw;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /*MAIN*/
 main{
     flex: 2;
@@ -37,6 +47,13 @@ main{
     font-size: 80px;
     margin-top: -65px;
 }
+.expand-recipe{
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.expand-recipe:hover{
+    cursor: pointer;
+    filter: invert(1);
+}
 
 .recipe-img{
     position: relative;
@@ -46,4 +63,16 @@ main{
     object-fit: cover;
     object-position: bottom;
     margin-top: -8vh;
+}
+
+.recipe-intro{
+    width: 800px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.recipe-box{
+    width: 600px;
+    padding: 20px;
+    display: flex; justify-content: space-between;
 }

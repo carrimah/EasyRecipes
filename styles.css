@@ -8,8 +8,6 @@
 }
 body{
     background-color: var(--main-bg-color);
-    height: 99vh; width: 100vw;
-    overflow: hidden;
     display: flex; flex-direction: column; justify-content: space-between; align-items: center;
 }
 body > *{

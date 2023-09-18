@@ -1,3 +1,9 @@
+body{
+    height: 99vh; width: 100vw;
+    overflow: hidden;
+}
+
+/*FOOTER*/
 #left-footer{
     display: flex; gap: 20px;
 }
