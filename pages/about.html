@@ -8,8 +8,26 @@
 <link rel="stylesheet" href="../styles.css">
 <style>
     h1{
-        color: #fffbf0; font-size: 40px; letter-spacing: 20px;
+        color: #fffbf0; font-size: 6vw; letter-spacing: 2vw;
     }
+    p{
+        font-size: 1.5vw;
+    }
+    p.about-p1{
+        width: 60vw; font-size: 2vw;
+    }
+    .credit-head{
+        margin-top: 16vw;
+    }
+    /*MOBILE- LAST (Sorry)*/
+@media only screen and (max-width: 600px) {
+    p.about-p1{
+        width: 80vw; font-size: 4vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+}
 </style>
 <body>
     <section id="drawer">
@@ -49,9 +67,9 @@
     </header>
     <main style="padding: 40px; text-align: center; display: flex; flex-direction: column; align-items: center;">
         <h1>ABOUT</h1>
-        <p style="width: 800px; font-size: 24px;">This site was made and updated as part of the Odin Project's Foundations course. This is the first project: Odin Recipes. It has been modified multiple times. The current version was last updated in September of 2023.</p>
-        <p style="font-size: 18px;">Carrime Hewitt - 2023</p>
-        <h1 style="margin-top: 100px;">CREDITS</h1>
+        <p class="about-p1">This site was made and updated as part of the Odin Project's Foundations course. This is the first project: Odin Recipes. It has been modified multiple times. The current version was last updated in September of 2023.</p>
+        <p>Carrima Hewitt - 2023</p>
+        <h1 class="credit-head">CREDITS</h1>
         <p>Design Inspo: <a href="https://dribbble.com/shots/6589142-Coockery-Website">Cookery Website</a></p>
         <p>Design Inspo: <a href="https://dribbble.com/shots/2901067-Food-Store-Component">Food Store</a></p>
         <p>Chai Photo by <a href="https://unsplash.com/@fauzanazhima?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fauzan</a> on <a href="https://unsplash.com/photos/WoJTrgm-Mkw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
