@@ -92,20 +92,43 @@ main{
 .slide h1{
     color: #fffbf0;
     font-size: 60px;
-    width: 25vw;
 }
 .slide:hover{
     cursor: pointer;
 }
 .slide-img{
     width: 30vw;
-    align-self: flex-end;
 }
-.slide-title-left{
-    text-align: right;
-    margin-right: -4vw;
+
+/*MOBILE- LAST (Sorry)*/
+@media only screen and (max-width: 600px) {
+    #bg-oval{
+        height: 50vw; width: 50vw; 
+    }
+    .slide{
+        flex-direction: column;
+    }
+    #recipe-num{
+        display: none;
+    }
+    .slide-img{
+        width: 50vw;
+    }
+    #recipe-credit{
+        display: none;
+    }
 }
-.slide-title-right{
-    text-align: left;
-    margin-left: -4vw;
+
+@media only screen and (min-width: 600px) {
+    .slide-title-left{
+        text-align: right;
+        margin-right: -4vw;
+    }
+    .slide-title-right{
+        text-align: left;
+        margin-left: -4vw;
+    }
+    .slide h1{
+        width: 25vw;
+    }
 }
