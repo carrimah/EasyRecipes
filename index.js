@@ -9,13 +9,13 @@ let currSlide = 1;
 function setCredit(){
     credit.setAttribute("data-recipe", currSlide);
     if(currSlide == 1){
-        credit.innerHTML="Tazo Tea"
+        credit.innerHTML="Carrima1"
     }
     else if(currSlide == 2){
-        credit.innerHTML="Carrima"
+        credit.innerHTML="Carrima2"
     }
     else if(currSlide == 3){
-        credit.innerHTML="Carrima"
+        credit.innerHTML="Carrima3"
     }
 }
 

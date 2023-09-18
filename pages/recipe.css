@@ -20,10 +20,8 @@ main{
     color: #fffbf0;
 }
 
-#visuals{
-    position: fixed;
-    height: 20vh;
-    top: 0;
+.visuals{
+    display: flex; align-items: center; flex-direction: column;
 }
 
 #recipe-title{
@@ -59,10 +57,11 @@ main{
     position: relative;
     z-index: 3;
     width: 32vw;
-    height: 26vw;
+    height: 27vw;
     object-fit: cover;
     object-position: bottom;
     margin-top: -8vh;
+    align-self: center;
 }
 
 .recipe-intro{
@@ -72,7 +71,10 @@ main{
 }
 
 .recipe-box{
-    width: 600px;
+    width: 800px;
     padding: 20px;
     display: flex; justify-content: space-between;
+}
+ol, ul{
+    margin-left: 15px;
 }

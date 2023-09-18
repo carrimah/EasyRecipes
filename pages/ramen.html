@@ -6,6 +6,7 @@
     <title>Ramen | Lazy Recipes</title>
 </head>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="./recipe.css">
 <body>
     <section id="drawer">
         <div>
@@ -42,6 +43,39 @@
             </div>
         </div>
     </header>
+    <main>
+        <div class="visuals">
+            <div id="recipe-title">
+                <h1 id="title-cursive">Ramen</h1>
+                <h1 id="title-big">Noodles</h1>
+            </div>
+            <img class="recipe-img" src="../images/ramen.png" alt="Photo of cup of chai">
+        </div>
+        <div class="expand-recipe">
+            <h1 style="font-weight: 200;">RECIPE</h1>
+            <img id="expand-icon" src="../images/arrow_down.svg" alt="Expand Icon" height="32">
+        </div>
+        <p class="recipe-intro">The cheap and easy classic. If you have nothing else, you have ramen noodles. This meal will never let you down. It can be simple or complex but what it will always be is delicious.</p>
+        <div class="recipe-box">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>Ramen package (of your choice)</li>
+                    <li>Water</li>
+                    <li>Toppings</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Cook the rame per the package instructions</li>
+                    <li>Add your toppings</li>
+                    <li>Enjoy.</li>
+                </ol>
+            </div>
+        </div>
+    </main>
     <script defer src="../script.js"></script>
+    <script defer src="./recipe.js"></script>
 </body>
 </html>
