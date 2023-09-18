@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/*MAIN*/
+main{
+    flex: 2;
+    display: flex; align-items: center; flex-direction: column;
+    overflow: hidden;
+    min-width: 100vw;
+    position: relative; z-index: 1;
+    color: #fffbf0;
+}
+
+#visuals{
+    position: fixed;
+    height: 20vh;
+    top: 0;
+}
+
+#recipe-title{
+    top: 0;
+    text-align: center;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+#title-cursive{
+    position: relative;
+    z-index: 2;
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    font-weight: 300;
+}
+#title-big{
+    position: relative;
+    color: black;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 40px;
+    font-size: 80px;
+    margin-top: -65px;
+}
+
+.recipe-img{
+    position: relative;
+    z-index: 3;
+    width: 32vw;
+    height: 26vw;
+    object-fit: cover;
+    object-position: bottom;
+    margin-top: -8vh;
+}

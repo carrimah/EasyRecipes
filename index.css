@@ -91,15 +91,15 @@ main{
 .slide:hover{
     cursor: pointer;
 }
-#slide-img{
+.slide-img{
     width: 30vw;
     align-self: flex-end;
 }
-#slide-title-left{
+.slide-title-left{
     text-align: right;
     margin-right: -4vw;
 }
-#slide-title-right{
+.slide-title-right{
     text-align: left;
     margin-left: -4vw;
 }
