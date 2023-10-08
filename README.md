@@ -1,2 +1,2 @@
 # LazyRecipes
-Recipes for people short on time (or money) (or both)
+Recipes that spark nostalgic joy for me as they were what I eat all the time in my 20s.
